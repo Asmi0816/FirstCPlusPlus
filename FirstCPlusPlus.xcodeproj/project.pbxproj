@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F315CBEE1E368FB600975F1A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F315CBED1E368FB600975F1A /* main.cpp */; };
+		F315CBF51E36936C00975F1A /* AfternoonRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F315CBF41E36936C00975F1A /* AfternoonRunner.cpp */; };
+		F315CBF71E36958800975F1A /* FirstController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F315CBF61E36958800975F1A /* FirstController.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		F315CBEA1E368FB600975F1A /* FirstCPlusPlus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirstCPlusPlus; sourceTree = BUILT_PRODUCTS_DIR; };
-		F315CBED1E368FB600975F1A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F315CBF41E36936C00975F1A /* AfternoonRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AfternoonRunner.cpp; path = Controller/AfternoonRunner.cpp; sourceTree = "<group>"; };
+		F315CBF61E36958800975F1A /* FirstController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FirstController.cpp; path = Controller/FirstController.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 		F315CBEC1E368FB600975F1A /* FirstCPlusPlus */ = {
 			isa = PBXGroup;
 			children = (
-				F315CBED1E368FB600975F1A /* main.cpp */,
+				F315CBF41E36936C00975F1A /* AfternoonRunner.cpp */,
+				F315CBF61E36958800975F1A /* FirstController.cpp */,
 			);
 			path = FirstCPlusPlus;
 			sourceTree = "<group>";
@@ -119,7 +122,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F315CBEE1E368FB600975F1A /* main.cpp in Sources */,
+				F315CBF71E36958800975F1A /* FirstController.cpp in Sources */,
+				F315CBF51E36936C00975F1A /* AfternoonRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
