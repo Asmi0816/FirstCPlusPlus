@@ -13,5 +13,7 @@ class FirstController
 {
 public:
     void start();
+private:
+    void sneakyMe();
 };
 #endif /* FirstController_h */
