@@ -13,8 +13,9 @@ using namespace std;
 
 void FirstController :: start()
 {
-    cout << "Chilling with my buddys :D.... wait did you hear something?" << endl;
-    sneakyMe();
+    //cout << "Chilling with my buddys :D.... wait did you hear something?" << endl;
+    //sneakyMe();
+    secretLevel();
 }
 void FirstController :: sneakyMe()
 {
@@ -47,6 +48,31 @@ void FirstController :: sneakyMe()
 }
 
 void FirstController :: secretLevel()
+{
+    cout << "This is a word game that will change based off your responces or will it?" << endl;
+    cout << "Once I saw the Kraken, it was a huge beast with huge beady eyes and a beak that could penetrate through solid steel that called from the bottom of the ocean." << endl;
+    cout << "Only once has it surfaced and left survivors. And.... I can take you there for a small fee of 200$ on my under water expaditionary extravaganze what do ya say?" << endl;
+    string responce;
+    int money;
+    money = 900;
+    cout << "(You think to yourself) You only have " << money << "$ and this month you couldn't find any work are you sure you want to go?" << endl;
+    cin >> responce;
+    if (responce.compare("yes") == 0)
+    {
+        cout << "Wise choice you will enjoy many adventures you and I. By the way I never did get your name might I ask what It is?" << endl;
+        string name;
+        cin >> name;
+        cout << "Ahhh now that's the name of a sailor! Alright we set sail in an hour don't be late." << endl;
+        
+    }
+    else
+    {
+        cout << "Crazy crook you think, I don't have enough money to pay rent let alone adventure. However you can't help but feel you missed out on a great adventure. The end." << endl;
+    }
+    
+}
+
+void FirstController :: useNumbers(int suppliedNumber)
 {
     
 }

@@ -13,6 +13,7 @@ class FirstController
 {
 private:
     void sneakyMe();
+    void useNumbers(int someNumber);
 
 public:
     void start();
