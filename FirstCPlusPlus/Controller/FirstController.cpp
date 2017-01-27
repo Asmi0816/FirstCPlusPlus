@@ -45,3 +45,8 @@ void FirstController :: sneakyMe()
     getline(cin, name);
     cout << "What kind of mind games are these!?!" << "        " << "later the cops found the man laying on the ground due to a mind game induced coma" << endl;
 }
+
+void FirstController :: secretLevel()
+{
+    
+}

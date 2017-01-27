@@ -11,9 +11,11 @@
 
 class FirstController
 {
-public:
-    void start();
 private:
     void sneakyMe();
+
+public:
+    void start();
+    void secretLevel();
 };
 #endif /* FirstController_h */
