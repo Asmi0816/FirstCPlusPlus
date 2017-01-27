@@ -10,13 +10,37 @@
 #include "FirstController.h"
 
 using namespace std;
+void FirstController :: usePointerToChange(int * pointedTo)
+{
+    *pointedTo = 2 * (392847432);
+}
 
 void FirstController :: start()
 {
-    //cout << "Chilling with my buddys :D.... wait did you hear something?" << endl;
+   
     //sneakyMe();
+    int myNumber = 9;
+    int * numberPointer = &myNumber;
+    
+    cout << "Starting Number: " << myNumber << endl;
+    useNumbers(myNumber);
+    cout << "Look no change " << myNumber << endl;
+    
+    cout << "changing number" << endl;
+    myNumber = impactNumber();
+    cout << "See - impacted " << myNumber << endl;
+    
+    cout << "changing with a pointer" << endl;
+    usePointerToChange(numberPointer);
+    cout << "See how the number has been changed: " << myNumber << endl;
+    
+    
     secretLevel();
+    
+    
 }
+
+
 void FirstController :: sneakyMe()
 {
     cout << "If you found this I am after you... You should call the cops..." << endl;
@@ -74,5 +98,12 @@ void FirstController :: secretLevel()
 
 void FirstController :: useNumbers(int suppliedNumber)
 {
-    
+    cout << "I was given: " << suppliedNumber << endl;
+    suppliedNumber = (suppliedNumber * 5 + 3424) / 33;
+    cout << "It is now: " << suppliedNumber << endl;
+}
+
+int FirstController :: impactNumber()
+{
+    return 348927;
 }
