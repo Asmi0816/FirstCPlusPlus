@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "../Model/Timer.hpp"
 #include "FirstController.h"
 
 using namespace std;
@@ -17,15 +18,16 @@ void FirstController :: usePointerToChange(int * pointedTo)
 
 void FirstController :: start()
 {
-   
+    Timer afternoonTime;
+    afternoonTime.startTimer();
     //sneakyMe();
     //int myNumber = 9;
-    //int * numberPointer = &myNumber;
-    //
-    //cout << "Starting Number: " << myNumber << endl;
+    // int * numberPointer = &myNumber;
+    
+    // cout << "Starting Number: " << myNumber << endl;
     //useNumbers(myNumber);
     //cout << "Look no change " << myNumber << endl;
-    //
+    
     //cout << "changing number" << endl;
     //myNumber = impactNumber();
     //cout << "See - impacted " << myNumber << endl;
@@ -36,7 +38,8 @@ void FirstController :: start()
     
     
     secretLevel();
-    
+    afternoonTime.stopTimer();
+    afternoonTime.displayTimerInformation();
     
 }
 
