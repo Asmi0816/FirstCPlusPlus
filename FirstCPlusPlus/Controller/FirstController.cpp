@@ -86,6 +86,7 @@ void FirstController :: secretLevel()
         money = 700;
         cout << "Wise choice you will enjoy many adventures you and I. By the way I never did get your name might I ask what It is?" << endl;
         string name;
+        string weapon;
         cin >> name;
         cout << "Ahhh now that's the name of a sailor! Alright we set sail in an hour don't be late." << endl;
         cout << "(you think) What to do for an hour? I could go to the MARKET or I could go to the BAR..." << endl;
@@ -95,6 +96,35 @@ void FirstController :: secretLevel()
         if (responce.compare("market") == 0)
         {
             cout << "You start walking to the market and think it would probably be good to grab some gear for the trip but the market is almost all sold out all that is left is a bag of SHRIMP a VOLLEYBALL and a POLE of somesort for 100$ each! Any you only have " << money << " left would you like to buy one or walk back to the BOAT?" << endl;
+            cin.ignore();
+            cin >> responce;
+            if(responce.compare("shrimp") == 0)
+            {
+                cout << "I guess I could use shrimp for fishing along the way..." << endl;
+                cout << "You start heading back to the boat to meet The Sailor." << endl;
+                weapon = "Shrimp";
+                money = 600;
+            }
+            else if(responce.compare("volleyball") == 0)
+            {
+                cout << "I'm sure I'm not the only one going might as well make this adventure a little fun..." << endl;
+                cout << "You start heading back to the boat to meet The Sailor." << endl;
+                weapon = "volleyball";
+                money = 600;
+            }
+            else if(responce.compare("pole") == 0)
+            {
+                cout << "Shwvoom shhwing this seems like a fun sword it sould suit my adventuring needs...(Somewhere from inside the store) Excuse me sir please do not swing plungers around in the store..." << endl;
+                cout << "You start heading back to the boat to meet The Sailor." << endl;
+                weapon = "plunger";
+                money = 600;
+
+            }
+            else
+            {
+                cout << "I already payed for the boaat I'm not going to need this junk." << endl;
+                cout << "You start heading back to the boat to meet The Sailor." << endl;
+            }
         }
         
     }
