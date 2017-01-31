@@ -19,20 +19,20 @@ void FirstController :: start()
 {
    
     //sneakyMe();
-    int myNumber = 9;
-    int * numberPointer = &myNumber;
+    //int myNumber = 9;
+    //int * numberPointer = &myNumber;
+    //
+    //cout << "Starting Number: " << myNumber << endl;
+    //useNumbers(myNumber);
+    //cout << "Look no change " << myNumber << endl;
+    //
+    //cout << "changing number" << endl;
+    //myNumber = impactNumber();
+    //cout << "See - impacted " << myNumber << endl;
     
-    cout << "Starting Number: " << myNumber << endl;
-    useNumbers(myNumber);
-    cout << "Look no change " << myNumber << endl;
-    
-    cout << "changing number" << endl;
-    myNumber = impactNumber();
-    cout << "See - impacted " << myNumber << endl;
-    
-    cout << "changing with a pointer" << endl;
-    usePointerToChange(numberPointer);
-    cout << "See how the number has been changed: " << myNumber << endl;
+    //cout << "changing with a pointer" << endl;
+    //usePointerToChange(numberPointer);
+    //cout << "See how the number has been changed: " << myNumber << endl;
     
     
     secretLevel();
